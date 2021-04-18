@@ -1,0 +1,27 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>addInPosizioneCorrente</Name>
+  <AddInID>{70fa44ed-7f6e-40de-b10b-cbe0500db84d}</AddInID>
+  <Description>AddIn per il posizionamento corrente in mappa</Description>
+  <Version>1.0</Version>
+  <Image>Images\addInPosizioneCorrente.png</Image>
+  <Author>GiancaGIS</Author>
+  <Company>GiancaGIS</Company>
+  <Date>18/04/2021</Date>
+  <Targets>
+    <Target name="Desktop" version="10.8" />
+  </Targets>
+  <AddIn language="CLR" library="addInPosizioneCorrente.dll" namespace="addInPosizioneCorrente">
+    <ArcMap>
+      <Commands>
+        <Button id="GiancaGIS_addInPosizioneCorrente_Posizione" class="btnPosizione" message="Clicca qui per vedere la posizione corrente" caption="Posizionati in mappa" tip="Clicca qui per vedere la posizione corrente" category="GiancaGIS" image="Images\Posizionw.png" />
+      </Commands>
+      <Toolbars>
+        <Toolbar id="GiancaGIS_addInPosizioneCorrente_GiancaGIS_Posizione_Windows" caption="GiancaGIS Posizione Windows Corrrente" showInitially="false">
+          <Items>
+            <Button refID="GiancaGIS_addInPosizioneCorrente_Posizione" />
+          </Items>
+        </Toolbar>
+      </Toolbars>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
